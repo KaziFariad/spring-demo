@@ -1,3 +1,4 @@
+package com.kazi.springdemo;
 
 public class TrackCoach implements Coach {
 
