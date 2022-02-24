@@ -9,8 +9,14 @@
 
     <!-- Define your beans here -->
     <bean id="myCoach"
-    	class="com.kazi.springdemo.BadmintonCoach">
+    	class="com.kazi.springdemo.TrackCoach">
+    	<constructor-arg ref="myFortune" />
     </bean>
+    
+    <bean id="myFortune"
+    	class="com.kazi.springdemo.GoodFortuneService">
+    </bean>
+    
     
     <bean id="myLoggerConfig" class="com.kazi.springdemo.LoggerConfig" init-method="initLogger">
     	<property name="rootLoggerLevel" value="FINEST" />
