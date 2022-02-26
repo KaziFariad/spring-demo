@@ -17,6 +17,11 @@
     	class="com.kazi.springdemo.GoodFortuneService">
     </bean>
     
+    <bean id="myCricketCoach"
+    	class="com.kazi.springdemo.CricketCoach">
+    	
+    	<property name="fortuneService" ref="myFortune"/>
+    </bean>
     
     <bean id="myLoggerConfig" class="com.kazi.springdemo.LoggerConfig" init-method="initLogger">
     	<property name="rootLoggerLevel" value="FINEST" />
