@@ -13,6 +13,8 @@ public class SetterInjectionDemoMain {
 		
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getDailyFortune());
+		System.out.println(theCoach.getEmailAddress());
+		System.out.println(theCoach.getTeamName());
 		
 		context.close();
 		
